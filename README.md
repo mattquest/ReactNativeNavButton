@@ -20,7 +20,7 @@ A simple button component for use with react-native and react-navigation written
       navTo="RouteName"
     />
     
-![Default Button](https://github.com/mattquest/ReactNativeNavButton/blob/master/defaultButton.png)
+![Default Button](https://github.com/mattquest/ReactNativeNavButton/blob/master/images/defaultButton.png)
     
 ### Blue Example:
 
@@ -30,7 +30,7 @@ A simple button component for use with react-native and react-navigation written
       color="#00acdf"
     />
     
-![Blue Button](https://github.com/mattquest/ReactNativeNavButton/blob/master/blueButton.png)
+![Blue Button](https://github.com/mattquest/ReactNativeNavButton/blob/master/images/blueButton.png)
 
 ### Light Button With Size
 
@@ -42,6 +42,6 @@ A simple button component for use with react-native and react-navigation written
       light
     />
 
-![Light Sized Button](https://github.com/mattquest/ReactNativeNavButton/blob/master/lightSizedButton.png)
+![Light Sized Button](https://github.com/mattquest/ReactNativeNavButton/blob/master/images/lightSizedButton.png)
     
 Tested with react-native 0.59.8 & react-navigation 4.0.10
