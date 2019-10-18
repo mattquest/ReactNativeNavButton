@@ -13,23 +13,35 @@ A simple button component for use with react-native and react-navigation written
  - `size` number value for overriding default font size
  
  
-### Simple Example:
+### Default Example:
 
     <WhButton
-      text="ButtonText"
+      text="Default Button"
       navTo="RouteName"
     />
     
-### With Optional Parameters:
+![Default Button](https://github.com/mattquest/ReactNativeNavButton/blob/master/defaultButton.png)
+    
+### Blue Example:
 
     <WhButton
-      text="ButtonText"
+      text="Blue Button"
+      navTo="RouteName"
+      color="#00acdf"
+    />
+    
+![Blue Button](https://github.com/mattquest/ReactNativeNavButton/blob/master/blueButton.png)
+
+### Light Button With Size
+
+    <WhButton
+      text="Light Button"
       navTo="RouteName"
       color="#ccc"
-      size={20}
+      size={25}
       light
     />
-    
-    
+
+![Light Sized Button](https://github.com/mattquest/ReactNativeNavButton/blob/master/lightSizedButton.png)
     
 Tested with react-native 0.59.8 & react-navigation 4.0.10
