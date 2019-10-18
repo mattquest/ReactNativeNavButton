@@ -1,5 +1,5 @@
 # WhButton
-A simple button component for use with react-native and react-navigation written in typescript. While this component requires react-navigation, it encapsulates the specific navigation impelmentation, allowing your templates to be agnostic to which router is used.
+A simple button component for use with react-native and react-navigation written in typescript. While this component requires react-navigation, it encapsulates the specific navigation implementation, allowing your templates to be agnostic to which router is used.
           
 #### required parameters
 
