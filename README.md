@@ -12,8 +12,11 @@ A simple button component for use with react-native and react-navigation written
  - `color` hex value for overriding the default background color
  - `size` number value for overriding default font size
  
+ ## Usage
  
-### Default Example:
+`import WhButton from './wherever/you/put/it/WhButton.tsx`
+ 
+#### Default Example:
 
     <WhButton
       text="Default Button"
@@ -22,7 +25,7 @@ A simple button component for use with react-native and react-navigation written
     
 ![Default Button](https://github.com/mattquest/ReactNativeNavButton/blob/master/images/defaultButton.png)
     
-### Blue Example:
+#### Blue Example:
 
     <WhButton
       text="Blue Button"
@@ -32,7 +35,7 @@ A simple button component for use with react-native and react-navigation written
     
 ![Blue Button](https://github.com/mattquest/ReactNativeNavButton/blob/master/images/blueButton.png)
 
-### Light Button With Size
+#### Light Button With Size
 
     <WhButton
       text="Light Button"
