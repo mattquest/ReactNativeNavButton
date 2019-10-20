@@ -14,41 +14,32 @@ interface Props {
 const WhButton:React.FC<Props & NavigationInjectedProps> = props => {
   const buttonStyles:{backgroundColor?: string} = {};
   const textStyles:{color?: string, fontSize?: number} = {};
-  
-  if (props.color) {
-    buttonStyles.backgroundColor = props.color
-  }
-  if (props.light) {
-    textStyles.color = '#000'
-  }
-  if (props.size) {
-    textStyles.fontSize = props.size
-  }
+  const styles = StyleSheet.create({
+    button: {
+      margin: 7,
+      padding: 7,
+      borderRadius: 5,
+      paddingHorizontal: 15,
+      backgroundColor: props.color ? props.color: '#333',
+      justifyContent: 'center',
+    },
+    buttonText: {
+      fontSize: props.size || 18,
+      color: props.light ? '#000':'#fff',
+      fontWeight: '700',
+    }
+  })
 
   return(
     <TouchableOpacity
       style={[styles.button, buttonStyles]}
       onPress={ () => props.navigation.navigate(props.navTo) }
     >
-        <Text style={[styles.buttonText, textStyles]}>{props.text}</Text>
+        <Text style={[styles.buttonText, textStyles]}>
+          {props.text}
+        </Text>
     </TouchableOpacity>
   )
 }
 
 export default withNavigation(WhButton);
-
-const styles = StyleSheet.create({
-  button: {
-    margin: 7,
-    padding: 7,
-    borderRadius: 5,
-    paddingHorizontal: 15,
-    backgroundColor: '#333',
-    justifyContent: 'center',
-  },
-  buttonText: {
-    fontSize: 18,
-    color: '#fff',
-    fontWeight: '700',
-  }
-})
