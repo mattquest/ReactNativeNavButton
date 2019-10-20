@@ -12,8 +12,8 @@ interface Props {
 }
 
 const WhButton:React.FC<Props & NavigationInjectedProps> = props => {
-  const buttonStyles:{backgroundColor?: string} = {};
-  const textStyles:{color?: string, fontSize?: number} = {};
+  // const buttonStyles:{backgroundColor?: string} = {};
+  // const textStyles:{color?: string, fontSize?: number} = {};
   const styles = StyleSheet.create({
     button: {
       margin: 7,
@@ -32,10 +32,10 @@ const WhButton:React.FC<Props & NavigationInjectedProps> = props => {
 
   return(
     <TouchableOpacity
-      style={[styles.button, buttonStyles]}
+      style={styles.button}
       onPress={ () => props.navigation.navigate(props.navTo) }
     >
-        <Text style={[styles.buttonText, textStyles]}>
+        <Text style={styles.buttonText}>
           {props.text}
         </Text>
     </TouchableOpacity>
