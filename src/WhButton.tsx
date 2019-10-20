@@ -12,8 +12,6 @@ interface Props {
 }
 
 const WhButton:React.FC<Props & NavigationInjectedProps> = props => {
-  // const buttonStyles:{backgroundColor?: string} = {};
-  // const textStyles:{color?: string, fontSize?: number} = {};
   const styles = StyleSheet.create({
     button: {
       margin: 7,
